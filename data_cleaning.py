@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 
+#Outlier Removal Function
 def clean_data(df):
     numeric_cols = df.select_dtypes(include=np.number)
 
