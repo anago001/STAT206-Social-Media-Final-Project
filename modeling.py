@@ -3,7 +3,6 @@ import statsmodels.api as sm
 import pandas as pd
 
 #Create Dummy Variable Function
-
 def dummies(df, column, drop_first=True):
     if column not in df.columns:
         raise ValueError(f"Column '{column}' not found in DataFrame.")
