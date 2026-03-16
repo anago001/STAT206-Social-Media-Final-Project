@@ -10,7 +10,6 @@ def summarize_variable(df, column):
     plt.figure(figsize=(8, 5))
     
     if df[column].dtype == "bool":
-        # Treat True/False as categorical
         sns.countplot(x=df[column])
         plt.title(f"Distribution of {column} (True/False)")
         plt.xlabel(column)
@@ -81,10 +80,10 @@ def compare(df, scale_col, cat_col, horizontal=False):
         sns.boxplot(x=cat_col, y=scale_col, data=data)
         plt.xlabel(cat_col)
         plt.ylabel(scale_col)
-        plt.xticks(rotation=45, ha="right")  # rotate labels so they fit
+        plt.xticks(rotation=45, ha="right") 
     
     plt.title(f"{scale_col} by {cat_col}")
-    plt.tight_layout()  # automatically adjust spacing
+    plt.tight_layout()
     plt.show()
     
     if num_groups == 2:
