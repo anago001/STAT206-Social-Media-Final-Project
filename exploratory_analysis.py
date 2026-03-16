@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+
+#Summarize Variables Function
 def summarize_variable(df, column):
     summary = df[column].describe()
     print("Summary Statistics:")
