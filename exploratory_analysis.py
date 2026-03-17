@@ -2,9 +2,20 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+from scipy.stats import ttest_ind, f_oneway
 
 #Summarize Variables Function
 def summarize_variable(df, column):
+    """
+    Prints summary statistics and displays a distribution plot for a given column.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        Input DataFrame.
+    column : str
+        Name of the column to summarize.
+    """
     summary = df[column].describe()
     print("Summary Statistics:")
     print(summary)
@@ -31,6 +42,32 @@ def summarize_variable(df, column):
 
 #Calculate Correlation Function
 def correlate(df, col1, col2, method="pearson", plot=True):
+    """
+    Computes and optionally plots the correlation between two columns.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        Input DataFrame.
+    col1 : str
+        Name of the first column.
+    col2 : str
+        Name of the second column.
+    method : str, optional
+        Correlation method: 'pearson', 'kendall', or 'spearman'. Default is 'pearson'.
+    plot : bool, optional
+        Whether to display a scatter plot with regression line. Default is True.
+
+    Returns
+    -------
+    float
+        The correlation value between col1 and col2.
+
+    Raises
+    ------
+    ValueError
+        If col1 or col2 are not found in the DataFrame.
+    """
     if col1 not in df.columns or col2 not in df.columns:
         raise ValueError(f"Columns '{col1}' or '{col2}' not found in DataFrame.")
 
@@ -56,11 +93,33 @@ def correlate(df, col1, col2, method="pearson", plot=True):
     return corr_value
 
 #Compare Scale and Categorical Data Function
-import seaborn as sns
-import matplotlib.pyplot as plt
-from scipy.stats import ttest_ind, f_oneway
 
 def compare(df, scale_col, cat_col, horizontal=False):
+    """
+    Compares a numeric column across groups of a categorical column using
+    a boxplot and either a t-test (2 groups) or one-way ANOVA (3+ groups).
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        Input DataFrame.
+    scale_col : str
+        Name of the numeric column to compare.
+    cat_col : str
+        Name of the categorical column defining the groups.
+    horizontal : bool, optional
+        Whether to draw the boxplot horizontally. Default is False.
+
+    Returns
+    -------
+    tuple
+        (test statistic, p-value) from t-test or ANOVA.
+
+    Raises
+    ------
+    ValueError
+        If scale_col or cat_col are not found in the DataFrame.
+    """
     if scale_col not in df.columns or cat_col not in df.columns:
         raise ValueError(f"Columns '{scale_col}' or '{cat_col}' not found in DataFrame.")
     
