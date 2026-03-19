@@ -38,6 +38,7 @@ def regression(df, y_var, x_vars):
     print(model.summary())
     return model
 
+#VIF Check Function
 def check_vif(df, x_vars):
     X = df[x_vars].copy()
     X = sm.add_constant(X)
