@@ -82,8 +82,8 @@ def correlate(df, col1, col2, method="pearson", plot=True):
     
     return corr_value
 
-#Compare Scale and Categorical Data Function
 
+#Compare Scale and Categorical Data Function
 def compare(df, scale_col, cat_col, horizontal=False):
     if scale_col not in df.columns or cat_col not in df.columns:
         raise ValueError(f"Columns '{scale_col}' or '{cat_col}' not found in DataFrame.")
