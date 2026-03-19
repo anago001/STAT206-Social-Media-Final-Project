@@ -1,0 +1,585 @@
+2026-03-18 09:13:18.459 [info] [main] Log level: Info
+2026-03-18 09:13:18.459 [info] [main] Validating found git in: "/usr/bin/git"
+2026-03-18 09:13:18.459 [info] [main] Using git "2.39.2 (Apple Git-143)" from "/usr/bin/git"
+2026-03-18 09:13:18.459 [info] [Model][doInitialScan] Initial repository scan started
+2026-03-18 09:13:18.550 [info] > git rev-parse --show-toplevel [105ms]
+2026-03-18 09:13:18.605 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [51ms]
+2026-03-18 09:13:18.831 [info] [Model][openRepository] Opened repository (path): /Users/jaspreetkaur/STAT206_GitHubTutorial
+2026-03-18 09:13:18.831 [info] [Model][openRepository] Opened repository (real path): /Users/jaspreetkaur/STAT206_GitHubTutorial
+2026-03-18 09:13:18.831 [info] [Model][openRepository] Opened repository (kind): repository
+2026-03-18 09:13:18.886 [info] > git config --get commit.template [50ms]
+2026-03-18 09:13:18.888 [info] > git rev-parse --show-toplevel [50ms]
+2026-03-18 09:13:18.891 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2026-03-18 09:13:18.972 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [122ms]
+2026-03-18 09:13:19.018 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [41ms]
+2026-03-18 09:13:19.381 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z -n51 --shortstat --follow -- /Users/jaspreetkaur/STAT206_GitHubTutorial/README.md [35ms]
+2026-03-18 09:13:19.408 [info] > git hash-object -t tree /dev/null [23ms]
+2026-03-18 09:13:19.441 [info] > git rev-list origin/main..main [31ms]
+2026-03-18 09:13:19.504 [info] > git check-ignore -v -z --stdin [50ms]
+2026-03-18 09:13:19.674 [info] > git status -z -uall [699ms]
+2026-03-18 09:13:19.721 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [27ms]
+2026-03-18 09:13:19.727 [info] > git config --get commit.template [27ms]
+2026-03-18 09:13:19.727 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [23ms]
+2026-03-18 09:13:19.750 [info] > git config --get --local branch.main.vscode-merge-base [24ms]
+2026-03-18 09:13:19.832 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [92ms]
+2026-03-18 09:13:19.840 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [86ms]
+2026-03-18 09:13:19.868 [info] > git merge-base refs/heads/main refs/remotes/origin/main [25ms]
+2026-03-18 09:13:19.900 [info] > git diff --raw --numstat --diff-filter=ADMR -z --find-renames=50% 8f431d856f79d0dcb66a0e16f26506a8de5833f1...refs/remotes/origin/main -- [28ms]
+2026-03-18 09:13:19.938 [info] > git check-ignore -v -z --stdin [29ms]
+2026-03-18 09:13:20.004 [info] > git show --textconv :README.md [40ms]
+2026-03-18 09:13:20.006 [info] > git ls-files --stage -- README.md [39ms]
+2026-03-18 09:13:20.041 [info] > git cat-file -s cab067b7b5c6925f9d39f7de837bbfb61cadf207 [32ms]
+2026-03-18 09:13:20.127 [info] > git blame --root --incremental 86a3421166a3f4e2a93fb52dcf587576b436455e -- README.md [48ms]
+2026-03-18 09:13:20.149 [info] > git status -z -uall [419ms]
+2026-03-18 09:13:20.362 [info] > git check-ignore -v -z --stdin [111ms]
+2026-03-18 09:13:47.981 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [5065ms]
+2026-03-18 09:13:48.021 [info] > git merge-base main origin/main [29ms]
+2026-03-18 09:14:00.186 [info] > git check-ignore -v -z --stdin [109ms]
+2026-03-18 09:14:00.744 [info] > git show --textconv :README.md [286ms]
+2026-03-18 09:14:00.765 [info] > git ls-files --stage -- README.md [291ms]
+2026-03-18 09:14:00.810 [info] > git cat-file -s cab067b7b5c6925f9d39f7de837bbfb61cadf207 [35ms]
+2026-03-18 09:16:11.334 [info] > git clone https://github.com/anago001/STAT206-Social-Media-Final-Project /Users/jaspreetkaur/Desktop/STAT206_GitHubTutorial/STAT206-Social-Media-Final-Project --progress [1302ms]
+2026-03-18 09:16:11.335 [info] Cloning into '/Users/jaspreetkaur/Desktop/STAT206_GitHubTutorial/STAT206-Social-Media-Final-Project'...
+remote: Enumerating objects: 138, done.        
+remote: Counting objects:   0% (1/138)        
+remote: Counting objects:   1% (2/138)        
+remote: Counting objects:   2% (3/138)        
+remote: Counting objects:   3% (5/138)        
+remote: Counting objects:   4% (6/138)        
+remote: Counting objects:   5% (7/138)        
+remote: Counting objects:   6% (9/138)        
+remote: Counting objects:   7% (10/138)        
+remote: Counting objects:   8% (12/138)        
+remote: Counting objects:   9% (13/138)        
+remote: Counting objects:  10% (14/138)        
+remote: Counting objects:  11% (16/138)        
+remote: Counting objects:  12% (17/138)        
+remote: Counting objects:  13% (18/138)        
+remote: Counting objects:  14% (20/138)        
+remote: Counting objects:  15% (21/138)        
+remote: Counting objects:  16% (23/138)        
+remote: Counting objects:  17% (24/138)        
+remote: Counting objects:  18% (25/138)        
+remote: Counting objects:  19% (27/138)        
+remote: Counting objects:  20% (28/138)        
+remote: Counting objects:  21% (29/138)        
+remote: Counting objects:  22% (31/138)        
+remote: Counting objects:  23% (32/138)        
+remote: Counting objects:  24% (34/138)        
+remote: Counting objects:  25% (35/138)        
+remote: Counting objects:  26% (36/138)        
+remote: Counting objects:  27% (38/138)        
+remote: Counting objects:  28% (39/138)        
+remote: Counting objects:  29% (41/138)        
+remote: Counting objects:  30% (42/138)        
+remote: Counting objects:  31% (43/138)        
+remote: Counting objects:  32% (45/138)        
+remote: Counting objects:  33% (46/138)        
+remote: Counting objects:  34% (47/138)        
+remote: Counting objects:  35% (49/138)        
+remote: Counting objects:  36% (50/138)        
+remote: Counting objects:  37% (52/138)        
+remote: Counting objects:  38% (53/138)        
+remote: Counting objects:  39% (54/138)        
+remote: Counting objects:  40% (56/138)        
+remote: Counting objects:  41% (57/138)        
+remote: Counting objects:  42% (58/138)        
+remote: Counting objects:  43% (60/138)        
+remote: Counting objects:  44% (61/138)        
+remote: Counting objects:  45% (63/138)        
+remote: Counting objects:  46% (64/138)        
+remote: Counting objects:  47% (65/138)        
+remote: Counting objects:  48% (67/138)        
+remote: Counting objects:  49% (68/138)        
+remote: Counting objects:  50% (69/138)        
+remote: Counting objects:  51% (71/138)        
+remote: Counting objects:  52% (72/138)        
+remote: Counting objects:  53% (74/138)        
+remote: Counting objects:  54% (75/138)        
+remote: Counting objects:  55% (76/138)        
+remote: Counting objects:  56% (78/138)        
+remote: Counting objects:  57% (79/138)        
+remote: Counting objects:  58% (81/138)        
+remote: Counting objects:  59% (82/138)        
+remote: Counting objects:  60% (83/138)        
+remote: Counting objects:  61% (85/138)        
+remote: Counting objects:  62% (86/138)        
+remote: Counting objects:  63% (87/138)        
+remote: Counting objects:  64% (89/138)        
+remote: Counting objects:  65% (90/138)        
+remote: Counting objects:  66% (92/138)        
+remote: Counting objects:  67% (93/138)        
+remote: Counting objects:  68% (94/138)        
+remote: Counting objects:  69% (96/138)        
+remote: Counting objects:  70% (97/138)        
+remote: Counting objects:  71% (98/138)        
+remote: Counting objects:  72% (100/138)        
+remote: Counting objects:  73% (101/138)        
+remote: Counting objects:  74% (103/138)        
+remote: Counting objects:  75% (104/138)        
+remote: Counting objects:  76% (105/138)        
+remote: Counting objects:  77% (107/138)        
+remote: Counting objects:  78% (108/138)        
+remote: Counting objects:  79% (110/138)        
+remote: Counting objects:  80% (111/138)        
+remote: Counting objects:  81% (112/138)        
+remote: Counting objects:  82% (114/138)        
+remote: Counting objects:  83% (115/138)        
+remote: Counting objects:  84% (116/138)        
+remote: Counting objects:  85% (118/138)        
+remote: Counting objects:  86% (119/138)        
+remote: Counting objects:  87% (121/138)        
+remote: Counting objects:  88% (122/138)        
+remote: Counting objects:  89% (123/138)        
+remote: Counting objects:  90% (125/138)        
+remote: Counting objects:  91% (126/138)        
+remote: Counting objects:  92% (127/138)        
+remote: Counting objects:  93% (129/138)        
+remote: Counting objects:  94% (130/138)        
+remote: Counting objects:  95% (132/138)        
+remote: Counting objects:  96% (133/138)        
+remote: Counting objects:  97% (134/138)        
+remote: Counting objects:  98% (136/138)        
+remote: Counting objects:  99% (137/138)        
+remote: Counting objects: 100% (138/138)        
+remote: Counting objects: 100% (138/138), done.        
+remote: Compressing objects:   0% (1/123)        
+remote: Compressing objects:   1% (2/123)        
+remote: Compressing objects:   2% (3/123)        
+remote: Compressing objects:   3% (4/123)        
+remote: Compressing objects:   4% (5/123)        
+remote: Compressing objects:   5% (7/123)        
+remote: Compressing objects:   6% (8/123)        
+remote: Compressing objects:   7% (9/123)        
+remote: Compressing objects:   8% (10/123)        
+remote: Compressing objects:   9% (12/123)        
+remote: Compressing objects:  10% (13/123)        
+remote: Compressing objects:  11% (14/123)        
+remote: Compressing objects:  12% (15/123)        
+remote: Compressing objects:  13% (16/123)        
+remote: Compressing objects:  14% (18/123)        
+remote: Compressing objects:  15% (19/123)        
+remote: Compressing objects:  16% (20/123)        
+remote: Compressing objects:  17% (21/123)        
+remote: Compressing objects:  18% (23/123)        
+remote: Compressing objects:  19% (24/123)        
+remote: Compressing objects:  20% (25/123)        
+remote: Compressing objects:  21% (26/123)        
+remote: Compressing objects:  22% (28/123)        
+remote: Compressing objects:  23% (29/123)        
+remote: Compressing objects:  24% (30/123)        
+remote: Compressing objects:  25% (31/123)        
+remote: Compressing objects:  26% (32/123)        
+remote: Compressing objects:  27% (34/123)        
+remote: Compressing objects:  28% (35/123)        
+remote: Compressing objects:  29% (36/123)        
+remote: Compressing objects:  30% (37/123)        
+remote: Compressing objects:  31% (39/123)        
+remote: Compressing objects:  32% (40/123)        
+remote: Compressing objects:  33% (41/123)        
+remote: Compressing objects:  34% (42/123)        
+remote: Compressing objects:  35% (44/123)        
+remote: Compressing objects:  36% (45/123)        
+remote: Compressing objects:  37% (46/123)        
+remote: Compressing objects:  38% (47/123)        
+remote: Compressing objects:  39% (48/123)        
+remote: Compressing objects:  40% (50/123)        
+remote: Compressing objects:  41% (51/123)        
+remote: Compressing objects:  42% (52/123)        
+remote: Compressing objects:  43% (53/123)        
+remote: Compressing objects:  44% (55/123)        
+remote: Compressing objects:  45% (56/123)        
+remote: Compressing objects:  46% (57/123)        
+remote: Compressing objects:  47% (58/123)        
+remote: Compressing objects:  48% (60/123)        
+remote: Compressing objects:  49% (61/123)        
+remote: Compressing objects:  50% (62/123)        
+remote: Compressing objects:  51% (63/123)        
+remote: Compressing objects:  52% (64/123)        
+remote: Compressing objects:  53% (66/123)        
+remote: Compressing objects:  54% (67/123)        
+remote: Compressing objects:  55% (68/123)        
+remote: Compressing objects:  56% (69/123)        
+remote: Compressing objects:  57% (71/123)        
+remote: Compressing objects:  58% (72/123)        
+remote: Compressing objects:  59% (73/123)        
+remote: Compressing objects:  60% (74/123)        
+remote: Compressing objects:  61% (76/123)        
+remote: Compressing objects:  62% (77/123)        
+remote: Compressing objects:  63% (78/123)        
+remote: Compressing objects:  64% (79/123)        
+remote: Compressing objects:  65% (80/123)        
+remote: Compressing objects:  66% (82/123)        
+remote: Compressing objects:  67% (83/123)        
+remote: Compressing objects:  68% (84/123)        
+remote: Compressing objects:  69% (85/123)        
+remote: Compressing objects:  70% (87/123)        
+remote: Compressing objects:  71% (88/123)        
+remote: Compressing objects:  72% (89/123)        
+remote: Compressing objects:  73% (90/123)        
+remote: Compressing objects:  74% (92/123)        
+remote: Compressing objects:  75% (93/123)        
+remote: Compressing objects:  76% (94/123)        
+remote: Compressing objects:  77% (95/123)        
+remote: Compressing objects:  78% (96/123)        
+remote: Compressing objects:  79% (98/123)        
+remote: Compressing objects:  80% (99/123)        
+remote: Compressing objects:  81% (100/123)        
+remote: Compressing objects:  82% (101/123)        
+remote: Compressing objects:  83% (103/123)        
+remote: Compressing objects:  84% (104/123)        
+remote: Compressing objects:  85% (105/123)        
+remote: Compressing objects:  86% (106/123)        
+remote: Compressing objects:  87% (108/123)        
+remote: Compressing objects:  88% (109/123)        
+remote: Compressing objects:  89% (110/123)        
+remote: Compressing objects:  90% (111/123)        
+remote: Compressing objects:  91% (112/123)        
+remote: Compressing objects:  92% (114/123)        
+remote: Compressing objects:  93% (115/123)        
+remote: Compressing objects:  94% (116/123)        
+remote: Compressing objects:  95% (117/123)        
+remote: Compressing objects:  96% (119/123)        
+remote: Compressing objects:  97% (120/123)        
+remote: Compressing objects:  98% (121/123)        
+remote: Compressing objects:  99% (122/123)        
+remote: Compressing objects: 100% (123/123)        
+remote: Compressing objects: 100% (123/123), done.        
+Receiving objects:   0% (1/138)
+Receiving objects:   1% (2/138)
+Receiving objects:   2% (3/138)
+Receiving objects:   3% (5/138)
+Receiving objects:   4% (6/138)
+Receiving objects:   5% (7/138)
+Receiving objects:   6% (9/138)
+Receiving objects:   7% (10/138)
+Receiving objects:   8% (12/138)
+Receiving objects:   9% (13/138)
+Receiving objects:  10% (14/138)
+Receiving objects:  11% (16/138)
+Receiving objects:  12% (17/138)
+Receiving objects:  13% (18/138)
+Receiving objects:  14% (20/138)
+Receiving objects:  15% (21/138)
+Receiving objects:  16% (23/138)
+Receiving objects:  17% (24/138)
+Receiving objects:  18% (25/138)
+Receiving objects:  19% (27/138)
+Receiving objects:  20% (28/138)
+Receiving objects:  21% (29/138)
+Receiving objects:  22% (31/138)
+Receiving objects:  23% (32/138)
+Receiving objects:  24% (34/138)
+Receiving objects:  25% (35/138)
+Receiving objects:  26% (36/138)
+Receiving objects:  27% (38/138)
+Receiving objects:  28% (39/138)
+Receiving objects:  29% (41/138)
+Receiving objects:  30% (42/138)
+Receiving objects:  31% (43/138)
+Receiving objects:  32% (45/138)
+Receiving objects:  33% (46/138)
+Receiving objects:  34% (47/138)
+Receiving objects:  35% (49/138)
+Receiving objects:  36% (50/138)
+Receiving objects:  37% (52/138)
+Receiving objects:  38% (53/138)
+Receiving objects:  39% (54/138)
+Receiving objects:  40% (56/138)
+Receiving objects:  41% (57/138)
+Receiving objects:  42% (58/138)
+Receiving objects:  43% (60/138)
+Receiving objects:  44% (61/138)
+Receiving objects:  45% (63/138)
+Receiving objects:  46% (64/138)
+Receiving objects:  47% (65/138)
+Receiving objects:  48% (67/138)
+Receiving objects:  49% (68/138)
+Receiving objects:  50% (69/138)
+Receiving objects:  51% (71/138)
+Receiving objects:  52% (72/138)
+Receiving objects:  53% (74/138)
+Receiving objects:  54% (75/138)
+Receiving objects:  55% (76/138)
+Receiving objects:  56% (78/138)
+Receiving objects:  57% (79/138)
+Receiving objects:  58% (81/138)
+Receiving objects:  59% (82/138)
+Receiving objects:  60% (83/138)
+Receiving objects:  61% (85/138)
+Receiving objects:  62% (86/138)
+Receiving objects:  63% (87/138)
+Receiving objects:  64% (89/138)
+Receiving objects:  65% (90/138)
+Receiving objects:  66% (92/138)
+Receiving objects:  67% (93/138)
+Receiving objects:  68% (94/138)
+Receiving objects:  69% (96/138)
+Receiving objects:  70% (97/138)
+Receiving objects:  71% (98/138)
+Receiving objects:  72% (100/138)
+Receiving objects:  73% (101/138)
+Receiving objects:  74% (103/138)
+Receiving objects:  75% (104/138)
+Receiving objects:  76% (105/138)
+Receiving objects:  77% (107/138)
+Receiving objects:  78% (108/138)
+Receiving objects:  79% (110/138)
+Receiving objects:  80% (111/138)
+remote: Total 138 (delta 70), reused 29 (delta 10), pack-reused 0 (from 0)        
+Receiving objects:  81% (112/138)
+Receiving objects:  82% (114/138)
+Receiving objects:  83% (115/138)
+Receiving objects:  84% (116/138)
+Receiving objects:  85% (118/138)
+Receiving objects:  86% (119/138)
+Receiving objects:  87% (121/138)
+Receiving objects:  88% (122/138)
+Receiving objects:  89% (123/138)
+Receiving objects:  90% (125/138)
+Receiving objects:  91% (126/138)
+Receiving objects:  92% (127/138)
+Receiving objects:  93% (129/138)
+Receiving objects:  94% (130/138)
+Receiving objects:  95% (132/138)
+Receiving objects:  96% (133/138)
+Receiving objects:  97% (134/138)
+Receiving objects:  98% (136/138)
+Receiving objects:  99% (137/138)
+Receiving objects: 100% (138/138)
+Receiving objects: 100% (138/138), 784.45 KiB | 3.20 MiB/s, done.
+Resolving deltas:   0% (0/70)
+Resolving deltas:   1% (1/70)
+Resolving deltas:   2% (2/70)
+Resolving deltas:   4% (3/70)
+Resolving deltas:   5% (4/70)
+Resolving deltas:   7% (5/70)
+Resolving deltas:   8% (6/70)
+Resolving deltas:  10% (7/70)
+Resolving deltas:  11% (8/70)
+Resolving deltas:  12% (9/70)
+Resolving deltas:  14% (10/70)
+Resolving deltas:  15% (11/70)
+Resolving deltas:  17% (12/70)
+Resolving deltas:  20% (14/70)
+Resolving deltas:  21% (15/70)
+Resolving deltas:  22% (16/70)
+Resolving deltas:  24% (17/70)
+Resolving deltas:  25% (18/70)
+Resolving deltas:  27% (19/70)
+Resolving deltas:  30% (21/70)
+Resolving deltas:  31% (22/70)
+Resolving deltas:  32% (23/70)
+Resolving deltas:  34% (24/70)
+Resolving deltas:  35% (25/70)
+Resolving deltas:  37% (26/70)
+Resolving deltas:  38% (27/70)
+Resolving deltas:  40% (28/70)
+Resolving deltas:  41% (29/70)
+Resolving deltas:  42% (30/70)
+Resolving deltas:  44% (31/70)
+Resolving deltas:  45% (32/70)
+Resolving deltas:  47% (33/70)
+Resolving deltas:  48% (34/70)
+Resolving deltas:  50% (35/70)
+Resolving deltas:  51% (36/70)
+Resolving deltas:  52% (37/70)
+Resolving deltas:  54% (38/70)
+Resolving deltas:  55% (39/70)
+Resolving deltas:  57% (40/70)
+Resolving deltas:  58% (41/70)
+Resolving deltas:  60% (42/70)
+Resolving deltas:  61% (43/70)
+Resolving deltas:  62% (44/70)
+Resolving deltas:  64% (45/70)
+Resolving deltas:  65% (46/70)
+Resolving deltas:  67% (47/70)
+Resolving deltas:  68% (48/70)
+Resolving deltas:  70% (49/70)
+Resolving deltas:  71% (50/70)
+Resolving deltas:  72% (51/70)
+Resolving deltas:  74% (52/70)
+Resolving deltas:  75% (53/70)
+Resolving deltas:  77% (54/70)
+Resolving deltas:  78% (55/70)
+Resolving deltas:  80% (56/70)
+Resolving deltas:  81% (57/70)
+Resolving deltas:  82% (58/70)
+Resolving deltas:  84% (59/70)
+Resolving deltas:  85% (60/70)
+Resolving deltas:  87% (61/70)
+Resolving deltas:  88% (62/70)
+Resolving deltas:  90% (63/70)
+Resolving deltas:  91% (64/70)
+Resolving deltas:  92% (65/70)
+Resolving deltas:  94% (66/70)
+Resolving deltas:  95% (67/70)
+Resolving deltas:  97% (68/70)
+Resolving deltas:  98% (69/70)
+Resolving deltas: 100% (70/70)
+Resolving deltas: 100% (70/70), done.
+2026-03-18 09:16:21.893 [info] [main] Log level: Info
+2026-03-18 09:16:21.893 [info] [main] Validating found git in: "/usr/bin/git"
+2026-03-18 09:16:21.937 [info] [main] Using git "2.39.2 (Apple Git-143)" from "/usr/bin/git"
+2026-03-18 09:16:21.938 [info] [Model][doInitialScan] Initial repository scan started
+2026-03-18 09:16:22.127 [info] > git rev-parse --show-toplevel [171ms]
+2026-03-18 09:16:22.176 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [34ms]
+2026-03-18 09:16:22.271 [info] [Model][openRepository] Opened repository (path): /Users/jaspreetkaur/Desktop/STAT206_GitHubTutorial/STAT206-Social-Media-Final-Project
+2026-03-18 09:16:22.271 [info] [Model][openRepository] Opened repository (real path): /Users/jaspreetkaur/Desktop/STAT206_GitHubTutorial/STAT206-Social-Media-Final-Project
+2026-03-18 09:16:22.272 [info] [Model][openRepository] Opened repository (kind): repository
+2026-03-18 09:16:22.277 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2026-03-18 09:16:22.304 [info] > git config --get commit.template [26ms]
+2026-03-18 09:16:22.308 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [26ms]
+2026-03-18 09:16:22.311 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/jaspreetkaur/Desktop/STAT206_GitHubTutorial/STAT206-Social-Media-Final-Project/.git/refs/remotes/origin/main'
+2026-03-18 09:16:22.331 [info] > git rev-parse refs/remotes/origin/main [20ms]
+2026-03-18 09:16:22.361 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [23ms]
+2026-03-18 09:16:22.378 [info] > git status -z -uall [44ms]
+2026-03-18 09:16:22.432 [info] > git config --get commit.template [28ms]
+2026-03-18 09:16:22.433 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [33ms]
+2026-03-18 09:16:22.439 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [19ms]
+2026-03-18 09:16:22.447 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/jaspreetkaur/Desktop/STAT206_GitHubTutorial/STAT206-Social-Media-Final-Project/.git/refs/remotes/origin/main'
+2026-03-18 09:16:22.460 [info] > git config --get --local branch.main.vscode-merge-base [25ms]
+2026-03-18 09:16:22.460 [warning] [Git][config] git config failed: Failed to execute git
+2026-03-18 09:16:22.466 [info] > git rev-parse refs/remotes/origin/main [25ms]
+2026-03-18 09:16:22.491 [info] > git reflog main --grep-reflog=branch: Created from *. [28ms]
+2026-03-18 09:16:22.502 [info] > git status -z -uall [34ms]
+2026-03-18 09:16:22.503 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [23ms]
+2026-03-18 09:16:22.514 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [19ms]
+2026-03-18 09:16:22.539 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [22ms]
+2026-03-18 09:16:22.684 [info] > git config --add --local branch.main.vscode-merge-base origin/main [142ms]
+2026-03-18 09:16:22.713 [info] > git config --get commit.template [26ms]
+2026-03-18 09:16:22.722 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [32ms]
+2026-03-18 09:16:22.725 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/jaspreetkaur/Desktop/STAT206_GitHubTutorial/STAT206-Social-Media-Final-Project/.git/refs/remotes/origin/main'
+2026-03-18 09:16:22.748 [info] > git rev-parse refs/remotes/origin/main [23ms]
+2026-03-18 09:16:22.776 [info] > git status -z -uall [25ms]
+2026-03-18 09:16:22.780 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [25ms]
+2026-03-18 09:16:22.934 [info] > git merge-base refs/heads/main refs/remotes/origin/main [144ms]
+2026-03-18 09:16:22.937 [info] > git merge-base refs/heads/main refs/remotes/origin/main [150ms]
+2026-03-18 09:16:22.977 [info] > git check-ignore -v -z --stdin [47ms]
+2026-03-18 09:16:22.978 [info] > git diff --raw --numstat --diff-filter=ADMR -z --find-renames=50% 2e415da1acae00dccf9ccb72013af10ecf38356b...refs/remotes/origin/main -- [41ms]
+2026-03-18 09:16:22.980 [info] > git diff --raw --numstat --diff-filter=ADMR -z --find-renames=50% 2e415da1acae00dccf9ccb72013af10ecf38356b...refs/remotes/origin/main -- [40ms]
+2026-03-18 10:16:24.300 [info] > git check-ignore -v -z --stdin [122ms]
+2026-03-18 10:16:24.362 [info] > git ls-files --stage -- data_cleaning.py [31ms]
+2026-03-18 10:16:24.372 [info] > git show --textconv :data_cleaning.py [44ms]
+2026-03-18 10:16:24.390 [info] > git cat-file -s b2956402fa27221957f3f25ea03374c1668e49d3 [26ms]
+2026-03-18 10:16:25.130 [info] > git check-ignore -v -z --stdin [31ms]
+2026-03-18 10:16:25.165 [info] > git ls-files --stage -- exploratory_analysis.py [29ms]
+2026-03-18 10:16:25.167 [info] > git show --textconv :exploratory_analysis.py [34ms]
+2026-03-18 10:16:25.209 [info] > git cat-file -s 1c9500c25ca38a89eae49bc7adab87789e6e14d3 [43ms]
+2026-03-18 10:16:26.035 [info] > git check-ignore -v -z --stdin [32ms]
+2026-03-18 10:16:26.116 [info] > git show --textconv :modeling.py [32ms]
+2026-03-18 10:16:26.118 [info] > git ls-files --stage -- modeling.py [30ms]
+2026-03-18 10:16:26.140 [info] > git cat-file -s eb3a3ec0b0ef99a54031752114aaa8518ba43dd2 [20ms]
+2026-03-18 10:16:27.103 [info] > git check-ignore -v -z --stdin [40ms]
+2026-03-18 10:16:27.160 [info] > git show --textconv :README.md [49ms]
+2026-03-18 10:16:27.160 [info] > git ls-files --stage -- README.md [47ms]
+2026-03-18 10:16:27.181 [info] > git cat-file -s 65505f200da6a2b5ccd53b38bcdf78fab91d7ae0 [20ms]
+2026-03-18 10:16:32.732 [info] > git check-ignore -v -z --stdin [49ms]
+2026-03-18 10:16:32.814 [info] > git ls-files --stage -- Students Social Media Addiction.csv [74ms]
+2026-03-18 10:16:32.816 [info] > git show --textconv :Students Social Media Addiction.csv [80ms]
+2026-03-18 10:16:32.838 [info] > git cat-file -s 5141935e18a8b5ed15777ee3f47e265143d3b27a [22ms]
+2026-03-18 10:16:34.211 [info] > git check-ignore -v -z --stdin [22ms]
+2026-03-18 10:16:34.233 [info] > git ls-files --stage -- README.md [17ms]
+2026-03-18 10:16:34.234 [info] > git show --textconv :README.md [20ms]
+2026-03-18 10:16:34.277 [info] > git cat-file -s 65505f200da6a2b5ccd53b38bcdf78fab91d7ae0 [43ms]
+2026-03-18 10:23:02.742 [info] > git config --get commit.template [74ms]
+2026-03-18 10:23:02.744 [info] > git check-ignore -v -z --stdin [75ms]
+2026-03-18 10:23:02.748 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [74ms]
+2026-03-18 10:23:02.749 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/jaspreetkaur/Desktop/STAT206_GitHubTutorial/STAT206-Social-Media-Final-Project/.git/refs/remotes/origin/main'
+2026-03-18 10:23:02.770 [info] > git rev-parse refs/remotes/origin/main [21ms]
+2026-03-18 10:23:02.795 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [23ms]
+2026-03-18 10:23:02.807 [info] > git status -z -uall [36ms]
+2026-03-18 10:35:53.683 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [302ms]
+2026-03-18 10:35:53.992 [info] > git check-ignore -v -z --stdin [23ms]
+2026-03-18 10:35:54.638 [info] > git merge-base main origin/main [20ms]
+2026-03-18 10:36:17.885 [info] > git add -A -- . [159ms]
+2026-03-18 10:36:17.918 [info] > git -c user.useConfigOnly=true commit --quiet [30ms]
+2026-03-18 10:36:17.918 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2026-03-18 10:36:17.946 [info] > git config --get-all user.name [27ms]
+2026-03-18 10:36:17.978 [info] > git config --get commit.template [30ms]
+2026-03-18 10:36:17.979 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [27ms]
+2026-03-18 10:36:17.981 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/jaspreetkaur/Desktop/STAT206_GitHubTutorial/STAT206-Social-Media-Final-Project/.git/refs/remotes/origin/main'
+2026-03-18 10:36:18.002 [info] > git rev-parse refs/remotes/origin/main [21ms]
+2026-03-18 10:36:18.032 [info] > git status -z -uall [29ms]
+2026-03-18 10:36:18.037 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [32ms]
+2026-03-18 10:36:19.086 [info] > git config --get commit.template [21ms]
+2026-03-18 10:36:19.087 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [19ms]
+2026-03-18 10:36:19.088 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/jaspreetkaur/Desktop/STAT206_GitHubTutorial/STAT206-Social-Media-Final-Project/.git/refs/remotes/origin/main'
+2026-03-18 10:36:19.104 [info] > git rev-parse refs/remotes/origin/main [16ms]
+2026-03-18 10:36:19.123 [info] > git status -z -uall [19ms]
+2026-03-18 10:36:19.123 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [17ms]
+2026-03-18 10:36:31.228 [info] > git -c user.useConfigOnly=true commit --quiet [35ms]
+2026-03-18 10:36:31.228 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2026-03-18 10:36:31.262 [info] > git config --get-all user.name [33ms]
+2026-03-18 10:36:31.299 [info] > git config --get commit.template [34ms]
+2026-03-18 10:36:31.300 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [33ms]
+2026-03-18 10:36:31.304 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/jaspreetkaur/Desktop/STAT206_GitHubTutorial/STAT206-Social-Media-Final-Project/.git/refs/remotes/origin/main'
+2026-03-18 10:36:31.333 [info] > git rev-parse refs/remotes/origin/main [30ms]
+2026-03-18 10:36:31.367 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [31ms]
+2026-03-18 10:36:31.368 [info] > git status -z -uall [33ms]
+2026-03-18 10:37:48.167 [info] > git -c user.useConfigOnly=true commit --quiet [66ms]
+2026-03-18 10:37:48.168 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2026-03-18 10:37:48.190 [info] > git config --get-all user.name [21ms]
+2026-03-18 10:37:48.212 [info] > git config --get commit.template [21ms]
+2026-03-18 10:37:48.215 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [22ms]
+2026-03-18 10:37:48.216 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/jaspreetkaur/Desktop/STAT206_GitHubTutorial/STAT206-Social-Media-Final-Project/.git/refs/remotes/origin/main'
+2026-03-18 10:37:48.233 [info] > git rev-parse refs/remotes/origin/main [17ms]
+2026-03-18 10:37:48.261 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [27ms]
+2026-03-18 10:37:48.263 [info] > git status -z -uall [30ms]
+2026-03-18 10:38:50.484 [info] > git -c user.useConfigOnly=true commit --quiet [89ms]
+2026-03-18 10:38:50.484 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2026-03-18 10:38:50.539 [info] > git config --get-all user.name [51ms]
+2026-03-18 10:38:50.603 [info] > git config --get commit.template [58ms]
+2026-03-18 10:38:50.608 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [53ms]
+2026-03-18 10:38:50.611 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/jaspreetkaur/Desktop/STAT206_GitHubTutorial/STAT206-Social-Media-Final-Project/.git/refs/remotes/origin/main'
+2026-03-18 10:38:50.645 [info] > git rev-parse refs/remotes/origin/main [35ms]
+2026-03-18 10:38:50.713 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [64ms]
+2026-03-18 10:38:50.721 [info] > git status -z -uall [74ms]
